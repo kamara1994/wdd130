@@ -1,0 +1,91 @@
+#content{
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.nav, .nav a{
+    text-align: center;
+}
+/*#hero-box {
+    display: flex;
+    justify-content: center; /* Center horizontally */
+    /*align-items: center;*/ /* Center vertically */
+    /*height: 100%; /* You might need to adjust this */
+    
+    #hero-box {
+        position: relative; /* Ensure positioning context */
+        width: 98vw; /* Full viewport width */
+        height: 100vh; /* Full viewport height */
+        overflow: hidden; /* Hide overflow */
+    }
+    
+    #hero-img {
+        position: absolute; /* Position absolutely within #hero-box */
+        width: 100%; /* Cover full width of the viewport */
+        height: 100%; /* Cover full height of the viewport */
+        top: 0;
+        left: 0;
+        object-fit: cover; /* Cover the area without distorting the aspect ratio */
+    }
+    
+    footer p {
+        font-size: 1.2em;
+    }  
+    footer p a:hover {
+        text-decoration: underline;
+    }  
+#hero-msg h1, #hero-msg h4{
+    text-align: center;
+}
+.button-box{
+    text-align: center;
+}
+main{
+    text-align: center;
+}
+.section{
+    text-align: center;
+}
+#background{
+    height: 725px;
+    background-color:pink ;
+}
+body{
+    background-color: aliceblue;
+    color: #d9c2a3;
+}
+header{
+    background-color: aqua;
+    color: #d9c2a3;
+}
+a:hover{
+    background-color: azure;
+    color: #d9c2a3;
+}
+.book{
+    background-color: aquamarine;
+    color: #d9c2a3;
+}
+.join{
+    background-color: aquamarine;
+    color: #d9c2a3;
+}
+
+
+.book:hover{
+    background-color: aquamarine;
+    color: yellow;
+}
+.join:hover{
+    background-color: aquamarine;
+    color: #d9c2a3;
+}
+
+.msg{
+    background-color: aquamarine;
+    color: blue;
+}
+
+footer{
+    background-color: aquamarine;
+    color: #d9c2a3;
+}
