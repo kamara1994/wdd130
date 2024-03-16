@@ -1,13 +1,22 @@
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Swap&family=Bungee&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
+#content {
+    max-width: 1600px;
+    margin: 0  auto;
+}
 
 /* Simple Reset */
-body, h2 {
+body{
     margin: 0;
     padding: 0;
     background-color: aliceblue; /* Light blue background */
-    font-family: 'Bungee', Arial, sans-serif; /* Main body font */
+    font-family:  Bungee, Helvetica, sans-serif; /* Main body font */
     font-size: 22px; /* Base font size increased for readability */
+}
+
+h2{
+    margin: 0;
 }
 
 header {
@@ -20,6 +29,8 @@ nav a {
     text-decoration: none;
     color: #030027; /* Making text color dark for contrast */
     padding: 35px; /* Ample padding for easier navigation */
+
+text-align: center;
 }
 
 /* Styling for .book and .join call-to-action elements */
@@ -32,6 +43,32 @@ nav a {
     display: inline-block; /* Allows for margin and alignment */
     text-decoration: none; /* Remove underline from links */
 }
+#logo_link {padding-top: 5px;}
+/* Hero Image Cover */
+#hero-img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures image covers the area well */
+}
+
+#hero-msg h1, #hero-msg h4 {text-align: center;}
+
+.logo {
+    width: 80px;
+}
+.icon {
+    width: 80px;
+    padding-top: 10px;
+}
+
+.home-title {
+    font-size: 2em;
+margin-top: 10px;
+}
+
+.button-box {text-align: center;}
+
+
 
 .book:hover, .join:hover {
     background-color: #4aad52; /* Darker shade on hover for interaction feedback */
@@ -44,6 +81,12 @@ nav a {
     box-sizing: border-box; /* Includes padding and border in the element's total width and height */
 }
 
+main section {text-align: center;}
+
+main section img {box-sizing: border-box;}
+
+.rivers-card, .camping-card, .rapids-cards {margin: 200px 0;
+}
 /* Message section styling */
 .msg {
     background-color: aquamarine; /* Background color for message section */
@@ -52,11 +95,16 @@ nav a {
     line-height: 1.5; /* Increased line height for readability */
 }
 
+.msg p {padding-bottom: 15px;}
+
 footer {
     background-color: aquamarine; /* Footer background to match the theme */
     color: #d9c2a3; /* Footer text color for consistency */
-    padding: 25px; /* Padding for spacing */
+    padding: 25px 50px; /* Padding for spacing */
+    margin-top: 200px;
 }
+footer .social img {padding-top: 15px;}
+
 
 /* Responsive Design Adjustments */
 @media (max-width: 768px) {
@@ -95,9 +143,3 @@ footer {
     }
 }
 
-/* Hero Image Cover */
-#hero-img {
-    width: 100%;
-    height: auto;
-    object-fit: cover; /* Ensures image covers the area well */
-}
