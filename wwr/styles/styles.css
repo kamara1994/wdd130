@@ -1,146 +1,339 @@
-/* Google Fonts Import - Assuming 'Bungee Spice' is the chosen font */
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 
-/* Simple Reset */
-body {
-    margin: 0;
-    padding: 0;
-    background-color: aliceblue; /* Light blue background */
-    font-family: 'Bungee Spice', Helvetica, sans-serif; /* Bungee Spice with fallbacks */
-    font-size: 22px; /* Base font size increased for readability */
+Conversation opened. 1 read message.
+
+Skip to content
+Using Gmail with screen readers
+
+1 of 736
+(no subject)
+Inbox
+
+Faithful Olaye
+Attachments
+Tue, Mar 19, 7:05 PM (6 hours ago)
+to me
+
+
+ One attachment
+  •  Scanned by Gmail
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&family=Young+Serif&display=swap');
+body{
+            max-width: 1600px;
+            margin: 0 auto;
+            background-color: rgb(190, 114, 15);
+            padding: 0;
+        }
+header{
+    background-color: beige;
+    display: grid;
+    grid-template-columns: 150px auto;
 }
-
-h2 {
-    margin: 0;
+nav {
+    display: flex;
+    justify-content: space-around;
 }
-
-header {
-    background-color: aqua;
-    color: #d9c2a3;
-}
-
-nav a {
+nav a:hover{
+    background-color: rgb(30, 189, 19);
+    color: black;
     text-decoration: none;
-    color: #030027;
+    
+}
+nav a{
     padding: 35px;
     text-align: center;
-}
 
-.book, .join {
-    background-color: aquamarine;
-    color: #d9c2a3;
-    padding: 15px 30px;
-    margin-top: 50px;
-    border-radius: 5px;
-    display: inline-block;
-    text-decoration: none;
 }
-
-/* Adding padding-top to #logo_link */
-#logo_link {
-    padding-top: 5px;
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; 
 }
-
 #hero-img {
     width: 100%;
-    height: auto;
-    object-fit: cover;
 }
-
-#hero-msg h1, #hero-msg h4 {
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+}
+#hero-msg h1{
     text-align: center;
+    
+    width: 100%;
 }
-
-.logo, .icon {
-    width: 80px;
-    padding-top: 10px;
+#hero-box{
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;  
 }
-
-.home-title {
-    font-family: 'Bungee Spice', Arial, sans-serif; /* Example of applying specific font to an element */
-    font-size: 2em;
+#hero-msg h4{
+    text-align: center;
+    color: azure;
+}
+.home-title{
+    color: azure;
+    font: "Roboto";
+    font-size: 5em;
     margin-top: 10px;
 }
 
-.button-box {
+.book, .join{
+    color: black;
+    font-size: 18px;
+    padding: 15px 30px;
+    margin-top: 50px;
+    background-color:azure;
+}
+.book:hover, .join:hover{
+    color: rgb(14, 208, 95);
+}
+.button-box{
     text-align: center;
 }
-
-.book:hover, .join:hover {
-    background-color: #4aad52;
-    color: yellow;
-}
-
-.card-img {
-    border: 10px solid #d9c2a3;
-    box-sizing: border-box;
-}
-
-main section {
-    text-align: center;
-}
-
-main section img {
-    box-sizing: border-box;
-}
-
-.rivers-card, .camping-card, .rapids-card {
-    margin: 200px 0;
-}
-
-.msg {
-    background-color: aquamarine;
-    color: blue;
+.msg{
+    background-color: #6f7364;
     padding: 35px;
-    line-height: 1.5em;
+    box-shadow: 5px 5px 10px #6f7364;
+    grid-column: 6/10;
+    grid-row: 6/7;
 }
 
-.msg p {
-    padding-bottom: 15px;
+.msg h2{
+color: black;
+font: "Young Serif";
+line-height: 1.5em;
+margin: 0;
+padding: 35px;
 }
 
-footer {
-    background-color: aquamarine;
-    color: #d9c2a3;
-    padding: 25px 50px;
-    margin-top: 200px;
+.msg p{
+color: black;
+font: "Young Serif";
+font-size: 1em;
+line-height: 1.5em;
+padding-bottom: 15px;
 }
 
-footer .social img {
+footer{
+color: black;
+padding: 25px 50px;
+margin-top: 200px;
+display: flex;
+justify-content: space-around;
+ align-items: center;
+}
+
+footer a{
+color: black;
+text-decoration: none;
+}
+
+footer a:hover{
+    color: rgb(49, 49, 2);
+}
+main section,.img{
+    text-align: center;
+    box-sizing: border-box;
+}
+#background{
+    height: 725px;
+    background-color: azure;
+    grid-column: 1/11;
+    grid-row: 4/9;
+}
+.icon{
+    width: 80px;
+    padding-top: 10px;
+}
+.logo{
+    width: 80px;
+    padding-top: 5px;
+    justify-self: center;
+    align-self: center;
+
+}
+
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+}
+
+.rivers-card, .camping-card, .rapids-card{
+    margin: 200px 0;
+
+}
+.rivers-card{
+grid-column: 2/4;
+grid-row: 2/3;
+}
+.camping-card{
+grid-column: 5/7;
+grid-row: 2/3;
+}
+.rapids-card{
+grid-column: 8/10;
+grid-row: 2/3;
+}
+.card-img, .mountains {
+    border: 10px solid azure;
+    width: 100%;
+    grid-column: 2/7;
+    grid-row: 5/8;
+    transition: transform .5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+.card-img:hover {
+    opacity: .6;
+    transform: scale(1.1);
+}
+    main section img{
+        box-sizing: border-box;
+    }
+footer p {
+    font-size: 1.2em;
+}
+footer p a:hover{
+    text-decoration: underline;
+} 
+footer.social img{
     padding-top: 15px;
 }
 
-/* Responsive Design Adjustments */
-@media (max-width: 768px) {
-    nav a {
-        padding: 20px;
-    }
-
-    .book, .join {
-        padding: 10px 20px;
-        font-size: 18px;
-    }
-
-    .card-img {
-        border-width: 5px;
-    }
+form {
+  /* Center the form on the page */
+  margin: 0 auto;
+  width: 400px;
+  /* Form outline */
+  padding: 1em;
+  border: 1px solid #ccc;
+  border-radius: 1em;
 }
 
-@media (max-width: 480px) {
-    nav {
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+form li + li {
+  margin-top: 1em;
+}
+
+label {
+  /* Uniform size & alignment */
+  display: inline-block;
+  width: 90px;
+  text-align: right;
+}
+
+input,
+textarea {
+  /* To make sure that all text fields have the same font settings
+     By default, textareas have a monospace font */
+  font: 1em sans-serif;
+
+  /* Uniform text field size */
+  width: 300px;
+  box-sizing: border-box;
+
+  /* Match form field borders */
+  border: 1px solid #999;
+}
+
+input:focus,
+textarea:focus {
+  /* Additional highlight for focused elements */
+  border-color: #000;
+}
+
+textarea {
+  /* Align multiline text fields with their labels */
+  vertical-align: top;
+
+  /* Provide space to type some text */
+  height: 5em;
+}
+
+.button {
+  /* Align buttons with the text fields */
+  padding-left: 90px; /* same size as the label elements */
+}
+
+button {
+  /* This extra margin represent roughly the same space as the space
+     between the labels and their text fields */
+  margin-left: 0.5em;
+}
+
+#feedback {
+    background-color: antiquewhite;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    padding: .5em;
+    /* make this element invisible until we are ready for it */
+    display: none;      
+}
+.moveDown {
+    margin-top: 3em;
+}
+
+
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+    nav, footer {
         flex-direction: column;
     }
-
     nav a {
-        padding: 10px;
-        text-align: center;
+        display: block;
+        padding: 15px;
     }
-
-    header, .msg, footer {
-        text-align: center;
+    #hero {
+        margin-top: 0;
     }
-
-    .book, .join {
-        font-size: 16px;
+    #hero-msg {
+        margin-top: 0;
+    }
+    #hero-msg h4 {
+        display: none;
+    }
+    .home-title {
+        font-size: 25px;
+        color: #6f7364;
+    }
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+    #background {
+        display: none;
+    }
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+    footer {
+        margin-top: 25px;
     }
 }
+
+.FAQ1{
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+    
+}
+.FAQ2{
+    margin: auto;
+    text-align: center;
+    font-size: larger;
+
+}
+
+
+style.css
