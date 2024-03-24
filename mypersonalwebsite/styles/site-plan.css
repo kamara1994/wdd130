@@ -7,19 +7,19 @@ Fonts are separated by a | */
   /* change the values below to your colors from your palette */
   --primary-color: #0f90ec   ;
   --secondary-color: hsl(7, 88%, 42%) ;
-  --accent1-color: hwb(163 84% 13%);
+  --accent1-color: hwb(0 15% 84%);
   --accent2-color: rgb(10, 230, 186);
 
   /* change the values below to your chosen font(s) */
   --heading-font: "font-family: Arial;";
-  --paragraph-font: Lato, Helvetica, sans-serif;
+  --paragraph-font: Verdana, 'Roboto';
 
   /* these colors below should be chosen from among your palette colors above */
-  --headline-color-on-white: rgb(10, 230, 186);  /* headlines on a white background */ 
+  --headline-color-on-white: rgb(35, 213, 178);  /* headlines on a white background */ 
   --headline-color-on-color: hsl(7, 88%, 42%) ; /* headlines on a colored background */ 
-  --paragraph-color-on-white: hwb(163 84% 13%); /* paragraph text on a white background */ 
-  --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: rgb(10, 230, 186);  ;
+  --paragraph-color-on-white: hwb(0 15% 84%); /* paragraph text on a white background */ 
+  --paragraph-color-on-color: hwb(0 15% 84%);paragraph text on a colored background */ 
+  --paragraph-background-color: ;rgb(10, 230, 186);
   --nav-link-color: #0f90ec ;
   --nav-background-color: rgb(10, 230, 186);
   --nav-hover-link-color: hwb(163 84% 13%)
@@ -74,7 +74,7 @@ p {
   text-align: center;
 }
 .colors th {
-  background-color: #999;
+  background-color: rgb(10, 230, 186);
 }
 .colors td{
   width: 25%;
