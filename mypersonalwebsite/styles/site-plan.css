@@ -16,10 +16,10 @@ Fonts are separated by a | */
 
   /* these colors below should be chosen from among your palette colors above */
   --headline-color-on-white: rgb(10, 230, 186);  /* headlines on a white background */ 
-  --headline-color-on-color: rgb(10, 230, 186);  /* headlines on a colored background */ 
+  --headline-color-on-color: hsl(7, 88%, 42%) ; /* headlines on a colored background */ 
   --paragraph-color-on-white: hwb(163 84% 13%); /* paragraph text on a white background */ 
   --paragraph-color-on-color: white; /* paragraph text on a colored background */ 
-  --paragraph-background-color: hsl(7, 88%, 42%)  ;
+  --paragraph-background-color: rgb(10, 230, 186);  ;
   --nav-link-color: #0f90ec ;
   --nav-background-color: rgb(10, 230, 186);
   --nav-hover-link-color: hwb(163 84% 13%)
