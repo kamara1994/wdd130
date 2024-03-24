@@ -11,7 +11,7 @@ Fonts are separated by a | */
   --accent2-color: rgb(10, 230, 186);
 
   /* change the values below to your chosen font(s) */
-  --heading-font: "font-family: Arial;";
+  --heading-font: Arial;
   --paragraph-font: Verdana, 'Roboto';
 
   /* these colors below should be chosen from among your palette colors above */
