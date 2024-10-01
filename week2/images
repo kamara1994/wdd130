@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Home Page</title>
+  <meta name="description" content="Your Name's home page for WDD 130 course. This page showcases my skills in HTML and CSS.">
+  <meta name="author" content="Your Name">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <!-- Header content goes here -->
+    <h1>Welcome to My Home Page</h1>
+  </header>
+
+  <main>
+    <!-- Main content goes here -->
+    <section>
+      <h2>About Me</h2>
+      <p>This is where you introduce yourself and describe your course goals.</p>
+      <img src="your-profile-image.jpg" alt="Profile picture of you">
+    </section>
+  </main>
+
+  <aside>
+    <h2>Sierra Leone</h2>
+    <img src="sierra-leone.jpg" alt="A beautiful image of Sierra Leone" width="200" height="auto">
+    <p>Sierra Leone is a country on the southwest coast of West Africa, known for its diverse environment and rich cultural heritage.</p>
+  </aside>
+
+  <footer>
+    <p>All content © 2024 by Your Name</p>
+  </footer>
+</body>
+</html>
