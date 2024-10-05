@@ -1,0 +1,120 @@
+:root {
+    --primary-color: #35424a; /* Dark background color */
+    --secondary-color: #ffffff; /* White background color */
+    --accent1-color: #e7f1f8; /* Light color for accents */
+    --accent2-color: #333333; /* Dark text color */
+}
+
+/* Reset some default browser styles */
+body, h1, h2, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Set a default font family for the body */
+body {
+    font-family: 'Open Sans', sans-serif; /* Body font */
+    line-height: 1.6; /* Improve readability */
+    background-color: var(--accent1-color); /* Light background color */
+    color: var(--accent2-color); /* Dark text color */
+}
+
+/* Header and Navigation Styles */
+header {
+    background: var(--primary-color); /* Dark background for header */
+    color: var(--secondary-color); /* White text color */
+    padding: 10px 0;
+    text-align: center;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav a {
+    color: var(--secondary-color); /* White text for links */
+    margin: 0 15px; /* Space between links */
+    text-decoration: none; /* Remove underline */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Underline on hover for visibility */
+}
+
+#logo {
+    height: 50px; /* Adjust the logo size */
+    margin-right: 20px; /* Space to the right of the logo */
+}
+
+/* Hero Section Styles */
+.hero {
+    position: relative; /* Relative positioning */
+    text-align: center; /* Center text */
+}
+
+.hero-image {
+    width: 100%; /* Full-width hero image */
+    height: auto; /* Maintain aspect ratio */
+}
+
+.hero h1 {
+    position: absolute; /* Absolute positioning for h1 */
+    top: 50%; /* Center vertically */
+    left: 50%; /* Center horizontally */
+    transform: translate(-50%, -50%); /* Offset by half its width and height */
+    color: var(--secondary-color); /* White text */
+    font-size: 3em; /* Adjust size */
+}
+
+.team-img {
+    float: right; /* Float the team image to the right */
+    width: 200px; /* Set width for the team image */
+    margin-left: 20px; /* Space to the left of the image */
+}
+
+/* Main Content Styles */
+main {
+    max-width: 800px; /* Set a max width for the main content */
+    margin: 20px auto; /* Center the main content */
+    padding: 20px; /* Add some padding */
+    background: var(--secondary-color); /* White background for the main area */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+}
+
+h2 {
+    margin: 20px 0; /* Space above and below subheadings */
+    color: var(--primary-color); /* Dark text for headings */
+}
+
+/* Adventure Section Images */
+.adventure-images {
+    display: flex;
+    justify-content: space-between; /* Space out images */
+    flex-wrap: wrap; /* Wrap images if too wide */
+}
+
+.adventure-images img {
+    width: 18%; /* Set a fixed width for images */
+    margin-bottom: 10px; /* Space below images */
+}
+
+/* Footer Styles */
+footer {
+    background: var(--primary-color); /* Same color as the header */
+    color: var(--secondary-color); /* White text color */
+    text-align: center; /* Center the text */
+    padding: 10px 0; /* Padding for footer */
+}
+
+footer nav a {
+    margin: 0 10px; /* Space between social media icons */
+}
+
+footer nav img {
+    width: 30px; /* Set size for social media icons */
+    height: auto; /* Maintain aspect ratio */
+    text-decoration: none; /* Remove underline from links */
+}
