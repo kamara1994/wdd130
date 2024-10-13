@@ -1,74 +1,139 @@
-/* Define color variables */
+/* Root Variables for Colors */
 :root {
-    --primary-color: #005f73;
-    --secondary-color: #94d2bd;
-    --accent-color: #e9d8a6;
-    --font-color: #333;
+    --primary-color: #6CA6C1;
+    --secondary-color: #747B32;
+    --accent1-color: #2D0BDA;
+    --accent2-color: #DCB5E2;
+    --accent3-color: #FFE66D;
 }
 
+/* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
-    color: var(--font-color);
     margin: 0;
     padding: 0;
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
 }
 
+/* Header Styles */
 header {
-    background-color: var(--primary-color);
-    color: white;
+    background-color: var(--accent1-color);
     padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .logo {
+    height: 100px;
+}
+
+nav {
+    display: flex;
+    gap: 20px;
 }
 
 nav a {
     color: white;
-    margin: 0 10px;
     text-decoration: none;
+    font-size: 1.2em;
+    font-weight: bold;
 }
 
+nav a:hover {
+    text-decoration: underline;
+    color: var(--accent3-color);
+}
+
+/* Hero Section */
 .hero {
     position: relative;
     text-align: center;
 }
 
-.hero img {
+.hero-image {
     width: 100%;
     height: auto;
 }
 
 .hero h1 {
     position: absolute;
-    top: 50%;
+    top: 20%;
     left: 50%;
     transform: translate(-50%, -50%);
-    color: white;
-    font-size: 2.5em;
-}
-
-article {
-    text-align: center;
-    padding: 20px;
-}
-
-article img {
-    float: right;
-    width: 150px;
-    margin-left: 20px;
-}
-
-footer {
-    background-color: var(--secondary-color);
-    color: white;
-    text-align: center;
+    color: var(--accent3-color);
+    font-size: 3em;
+    font-family: 'Afacad Flux', sans-serif;
+    background-color: rgba(0, 0, 0, 0.5);
     padding: 10px;
 }
 
-footer a img {
-    width: 24px;
-    height: 24px;
-    margin: 0 5px;
+.hero article {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    width: 50%;
 }
 
+.hero .client-image {
+    float: left;
+    width: 100px;
+    margin-right: 20px;
+}
+
+/* Section Styling */
+section {
+    padding: 20px;
+    background-color: var(--accent2-color);
+    color: var(--secondary-color);
+}
+
+section img {
+    width: 70%; /* Reduce image width to 70% */
+    float: left; /* Float the images to the left */
+    margin-right: 20px; /* Add space between the images and text */
+    margin-bottom: 20px; /* Add margin at the bottom for spacing */
+}
+
+section p {
+    text-align: center;
+    font-size: 1.1em;
+    color: var(--accent1-color);
+    margin-bottom: 20px;
+    clear: both; /* Ensures the text doesn't overlap with floated images */
+}
+
+/* Footer Styles */
+footer {
+    background-color: var(--accent1-color);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    margin: 0 10px;
+}
+
+footer a img {
+    width: 30px;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: none;
+}
+
+/* Remove underlines from social media links */
 footer a {
     text-decoration: none;
 }
