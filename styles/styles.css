@@ -7,38 +7,40 @@
     --accent3: #FFE66D;
 }
 
-/* Global styles */
+/* General body styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #fff;
-    color: var(--primary);
+    background-color: var(--accent2);
+    color: var(--secondary);
 }
 
+/* Header styles */
 header {
-    background-color: var(--accent1);
-    color: #fff;
-    padding: 20px;
-    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: var(--primary);
+    padding: 10px;
 }
 
 header img {
-    max-width: 150px;
+    max-height: 50px;
 }
 
 nav a {
-    margin: 0 15px;
-    color: #fff;
+    margin-left: 20px;
     text-decoration: none;
+    color: var(--accent1);
     font-weight: bold;
 }
 
 nav a:hover {
-    text-decoration: underline;
+    color: var(--accent3);
 }
 
-/* Hero Section */
+/* Hero section */
 .hero {
     position: relative;
     text-align: center;
@@ -54,45 +56,57 @@ nav a:hover {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    font-size: 3rem;
+    font-size: 3em;
     color: var(--accent3);
-    text-shadow: 2px 2px var(--accent1);
 }
 
+/* Article content */
 article {
-    padding: 20px;
     text-align: center;
+    padding: 20px;
 }
 
 article img {
     float: right;
-    width: 300px;
     margin-left: 20px;
+    max-width: 40%;
 }
 
+/* Section styles */
 section {
     padding: 20px;
 }
 
 section h2 {
-    color: var(--secondary);
-    font-family: 'Afacad Flux', serif;
+    color: var(--accent1);
 }
 
-/* Footer */
+section img {
+    display: block;
+    margin: 10px auto;
+    max-width: 100%;
+}
+
+/* Remove grid from the last two images */
+section img:nth-last-child(2),
+section img:last-child {
+    display: block;
+    margin: 10px auto;
+}
+
+/* Footer styles */
 footer {
-    background-color: var(--accent2);
-    padding: 10px;
+    background-color: var(--primary);
     text-align: center;
-    color: var(--primary);
-    font-size: 0.9rem;
+    padding: 10px;
+    color: var(--accent3);
 }
 
-footer img {
-    width: 30px;
+footer a img {
+    height: 24px;
     margin: 0 10px;
 }
 
-footer a {
-    text-decoration: none;
+footer a:hover img {
+    opacity: 0.7;
 }
