@@ -16,124 +16,124 @@ body {
     color: var(--secondary-color);
 }
 
-/* Header Styles */
+/* Header Styles with CSS Grid */
 header {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    align-items: center;
     background-color: var(--accent1-color);
     padding: 20px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
 }
 
 header .logo {
-    height: 100px;
+    height: 80px;
 }
 
 nav {
     display: flex;
-    gap: 20px;
+    justify-content: space-around;
 }
 
 nav a {
     color: white;
     text-decoration: none;
-    font-size: 1.2em;
-    font-weight: bold;
+    font-size: 1.1em;
+    padding: 10px;
+    background-color: var(--accent3-color);
+    border-radius: 5px;
 }
 
 nav a:hover {
-    text-decoration: underline;
-    color: var(--accent3-color);
+    background-color: var(--accent2-color);
 }
 
 /* Hero Section */
 .hero {
-    position: relative;
+    text-align: center;
+    background-color: var(--accent2-color);
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    color: var(--accent1-color);
+}
+
+.hero-content {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.hero-content img {
+    width: 100%;
+}
+
+/* History Section */
+.history-section {
+    background-color: var(--accent3-color);
+    padding: 40px;
     text-align: center;
 }
 
-.hero-image {
+.history-section h2 {
+    font-size: 2em;
+    color: var(--accent1-color);
+    margin-bottom: 20px;
+}
+
+.history-content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-items: center;
+}
+
+.history-content img {
     width: 100%;
     height: auto;
 }
 
-.hero h1 {
-    position: absolute;
-    top: 20%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: var(--accent3-color);
-    font-size: 3em;
-    font-family: 'Afacad Flux', sans-serif;
-    background-color: rgba(0, 0, 0, 0.5);
-    padding: 10px;
-}
-
-.hero article {
-    position: absolute;
-    bottom: 20px;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: rgba(0, 0, 0, 0.5);
-    color: white;
-    padding: 10px;
-    width: 50%;
-}
-
-.hero .client-image {
-    float: left;
-    width: 100px;
-    margin-right: 20px;
-}
-
-/* Section Styling */
-section {
-    padding: 20px;
+/* Adventure Section */
+.adventure-section {
     background-color: var(--accent2-color);
-    color: var(--secondary-color);
-}
-
-section img {
-    width: 70%; /* Reduce image width to 70% */
-    float: left; /* Float the images to the left */
-    margin-right: 20px; /* Add space between the images and text */
-    margin-bottom: 20px; /* Add margin at the bottom for spacing */
-}
-
-section p {
+    padding: 40px 20px;
     text-align: center;
-    font-size: 1.1em;
-    color: var(--accent1-color);
-    margin-bottom: 20px;
-    clear: both; /* Ensures the text doesn't overlap with floated images */
 }
 
-/* Footer Styles */
+.adventure-gallery {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 20px;
+}
+
+.adventure-gallery img {
+    width: 100%;
+    height: auto;
+}
+
+figcaption {
+    font-size: 1em;
+    color: var(--accent1-color);
+}
+
+/* Footer */
 footer {
     background-color: var(--accent1-color);
     color: white;
-    text-align: center;
-    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
 }
 
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    margin: 0 10px;
+footer .social-media {
+    display: flex;
+    gap: 10px;
 }
 
 footer a img {
     width: 30px;
-    text-decoration: none;
-}
-
-footer a:hover {
-    text-decoration: none;
-}
-
-/* Remove underlines from social media links */
-footer a {
-    text-decoration: none;
 }
