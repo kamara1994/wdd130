@@ -1,120 +1,74 @@
+/* Define color variables */
 :root {
-    --primary-color: #35424a; /* Dark background color */
-    --secondary-color: #ffffff; /* White background color */
-    --accent1-color: #e7f1f8; /* Light color for accents */
-    --accent2-color: #333333; /* Dark text color */
+    --primary-color: #005f73;
+    --secondary-color: #94d2bd;
+    --accent-color: #e9d8a6;
+    --font-color: #333;
 }
 
-/* Reset some default browser styles */
-body, h1, h2, p {
+body {
+    font-family: 'Roboto', sans-serif;
+    color: var(--font-color);
     margin: 0;
     padding: 0;
 }
 
-/* Set a default font family for the body */
-body {
-    font-family: 'Open Sans', sans-serif; /* Body font */
-    line-height: 1.6; /* Improve readability */
-    background-color: var(--accent1-color); /* Light background color */
-    color: var(--accent2-color); /* Dark text color */
-}
-
-/* Header and Navigation Styles */
 header {
-    background: var(--primary-color); /* Dark background for header */
-    color: var(--secondary-color); /* White text color */
-    padding: 10px 0;
+    background-color: var(--primary-color);
+    color: white;
+    padding: 20px;
     text-align: center;
 }
 
-nav {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
 nav a {
-    color: var(--secondary-color); /* White text for links */
-    margin: 0 15px; /* Space between links */
-    text-decoration: none; /* Remove underline */
+    color: white;
+    margin: 0 10px;
+    text-decoration: none;
 }
 
-nav a:hover {
-    text-decoration: underline; /* Underline on hover for visibility */
-}
-
-#logo {
-    height: 50px; /* Adjust the logo size */
-    margin-right: 20px; /* Space to the right of the logo */
-}
-
-/* Hero Section Styles */
 .hero {
-    position: relative; /* Relative positioning */
-    text-align: center; /* Center text */
+    position: relative;
+    text-align: center;
 }
 
-.hero-image {
-    width: 100%; /* Full-width hero image */
-    height: auto; /* Maintain aspect ratio */
+.hero img {
+    width: 100%;
+    height: auto;
 }
 
 .hero h1 {
-    position: absolute; /* Absolute positioning for h1 */
-    top: 50%; /* Center vertically */
-    left: 50%; /* Center horizontally */
-    transform: translate(-50%, -50%); /* Offset by half its width and height */
-    color: var(--secondary-color); /* White text */
-    font-size: 3em; /* Adjust size */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    font-size: 2.5em;
 }
 
-.team-img {
-    float: right; /* Float the team image to the right */
-    width: 200px; /* Set width for the team image */
-    margin-left: 20px; /* Space to the left of the image */
+article {
+    text-align: center;
+    padding: 20px;
 }
 
-/* Main Content Styles */
-main {
-    max-width: 800px; /* Set a max width for the main content */
-    margin: 20px auto; /* Center the main content */
-    padding: 20px; /* Add some padding */
-    background: var(--secondary-color); /* White background for the main area */
-    border-radius: 8px; /* Rounded corners */
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+article img {
+    float: right;
+    width: 150px;
+    margin-left: 20px;
 }
 
-h2 {
-    margin: 20px 0; /* Space above and below subheadings */
-    color: var(--primary-color); /* Dark text for headings */
-}
-
-/* Adventure Section Images */
-.adventure-images {
-    display: flex;
-    justify-content: space-between; /* Space out images */
-    flex-wrap: wrap; /* Wrap images if too wide */
-}
-
-.adventure-images img {
-    width: 18%; /* Set a fixed width for images */
-    margin-bottom: 10px; /* Space below images */
-}
-
-/* Footer Styles */
 footer {
-    background: var(--primary-color); /* Same color as the header */
-    color: var(--secondary-color); /* White text color */
-    text-align: center; /* Center the text */
-    padding: 10px 0; /* Padding for footer */
+    background-color: var(--secondary-color);
+    color: white;
+    text-align: center;
+    padding: 10px;
 }
 
-footer nav a {
-    margin: 0 10px; /* Space between social media icons */
+footer a img {
+    width: 24px;
+    height: 24px;
+    margin: 0 5px;
 }
 
-footer nav img {
-    width: 30px; /* Set size for social media icons */
-    height: auto; /* Maintain aspect ratio */
-    text-decoration: none; /* Remove underline from links */
+footer a {
+    text-decoration: none;
 }
