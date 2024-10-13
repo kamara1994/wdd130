@@ -1,62 +1,98 @@
+/* Color variables */
+:root {
+    --primary: #6CA6C1;
+    --secondary: #747B32;
+    --accent1: #2D0BDA;
+    --accent2: #DCB5E2;
+    --accent3: #FFE66D;
+}
+
+/* Global styles */
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background-color: #fff;
+    color: var(--primary);
 }
 
 header {
-    background: #35424a;
-    color: #ffffff;
-    padding: 10px 0;
+    background-color: var(--accent1);
+    color: #fff;
+    padding: 20px;
     text-align: center;
 }
 
+header img {
+    max-width: 150px;
+}
+
 nav a {
-    color: #ffffff;
     margin: 0 15px;
+    color: #fff;
     text-decoration: none;
+    font-weight: bold;
 }
 
 nav a:hover {
     text-decoration: underline;
 }
 
-main {
-    max-width: 800px; /* Limit the width of the main content */
-    margin: 0 auto; /* Center the main content */
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+}
+
+.hero img {
+    width: 100%;
+    height: auto;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 3rem;
+    color: var(--accent3);
+    text-shadow: 2px 2px var(--accent1);
+}
+
+article {
     padding: 20px;
     text-align: center;
 }
 
-main img {
-    width: 150px; /* Existing profile image styles */
-    height: auto;
+article img {
+    float: right;
+    width: 300px;
+    margin-left: 20px;
 }
 
-aside {
-    width: 300px; /* Set width for the aside element */
-    margin: 20px auto; /* Center the aside element */
-    border: 2px solid #35424a; /* Add border */
-    padding: 10px; /* Add padding */
-    background-color: #e9ecef; /* Light background color */
-    color: #333; /* Text color */
+section {
+    padding: 20px;
 }
 
-aside img {
-    width: 200px; /* Set the width of the image in the aside */
-    height: auto; /* Maintain aspect ratio */
+section h2 {
+    color: var(--secondary);
+    font-family: 'Afacad Flux', serif;
 }
 
-p {
-    padding: 0; /* Set padding for paragraphs to 0 */
-}
-
+/* Footer */
 footer {
-    margin-top: 20px; /* Add margin on top of the footer */
-    border-top: 2px solid #35424a; /* Add top border to footer */
-    text-align: center; /* Center footer text */
-    padding: 10px 0; /* Padding for footer */
-    background-color: #35424a; /* Footer background color */
-    color: #ffffff; /* Footer text color */
+    background-color: var(--accent2);
+    padding: 10px;
+    text-align: center;
+    color: var(--primary);
+    font-size: 0.9rem;
+}
+
+footer img {
+    width: 30px;
+    margin: 0 10px;
+}
+
+footer a {
+    text-decoration: none;
 }
