@@ -4,8 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="White Water Rafting Site Contact Page">
+    <meta name="author" content="Joseph Allan Kamara">
     <title>Contact Page - White Water Rafting</title>
+    
     <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/rafting.css">
 </head>
@@ -24,18 +28,41 @@
 
     <!-- Main Content -->
     <main>
+        <h1>Contact Us - White Water Rafting Adventures</h1>
 
+        <!-- Embedded Google Map -->
+        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- Contact Form -->
+        <form action="/submit-contact" method="post">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="comments">Comments:</label>
+            <textarea id="comments" name="comments" required></textarea>
+
+            <fieldset>
+                <legend>Preferred Contact Method:</legend>
+                <label for="emailContact">Email</label>
+                <input type="radio" id="emailContact" name="contactMethod" value="email" required>
+                <label for="phoneContact">Phone</label>
+                <input type="radio" id="phoneContact" name="contactMethod" value="phone">
+                <label for="noneContact">None</label>
+                <input type="radio" id="noneContact" name="contactMethod" value="none">
+            </fieldset>
+
+            <label for="newsletter">Sign up for our newsletter:</label>
+            <input type="checkbox" id="newsletter" name="newsletter">
+
+            <button type="submit">Send Your Message</button>
+        </form>
     </main>
 
     <!-- Footer -->
     <footer>
         <p>&copy; 2024 White Water Rafting | I Joseph Allan Kamara Designed This Site</p>
         <div class="social-media">
-            <a href="https://facebook.com" target="_blank"><img src="images/Facebook-Logo.jpg" alt="Facebook"></a>
-            <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>
-            <a href="https://instagram.com" target="_blank"><img src="images/instagram.jpeg" alt="Instagram"></a>
-        </div>
-    </footer>
-
-</body>
-</html>
+            <a hr
