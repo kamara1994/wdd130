@@ -49,14 +49,30 @@ nav a:hover {
 
 /* Hero Section */
 .hero {
-    text-align: center;
-    background-color: var(--accent2-color);
-    padding: 40px 20px;
+   
+    position: relative;
+}
+.hero img {
+    width: 100%; 
+    height: auto;
+}
+.hero article {
+    position: absolute;
+    max-width: 80%;
+    top: 7rem; 
+    left: 0;
+    right: 0;
+    margin: 0 auto;
 }
 
+.hero article img{
+    width: 200px;
+    float: right;
+}
 .hero h1 {
     font-size: 2.5em;
     color: var(--accent1-color);
+    position: absolute;
 }
 
 .hero-content {
@@ -72,13 +88,13 @@ nav a:hover {
 }
 
 /* History Section */
-.history-section {
+.history{
     background-color: var(--accent3-color);
     padding: 40px;
     text-align: center;
 }
 
-.history-section h2 {
+.history h2 {
     font-size: 2em;
     color: var(--accent1-color);
     margin-bottom: 20px;
@@ -97,23 +113,30 @@ nav a:hover {
 }
 
 /* Adventure Section */
-.adventure-section {
+.adventure {
     background-color: var(--accent2-color);
-    padding: 40px 20px;
+    padding: 2rem 0;
     text-align: center;
 }
 
 .adventure-gallery {
-    display: grid;
+    display: flex;
+    flex-flow: row;
+
+    /*display: grid;
     grid-template-columns: repeat(5, 1fr);
-    gap: 20px;
+    gap: 20px;*/
 }
 
 .adventure-gallery img {
-    width: 100%;
-    height: auto;
+    max-height: 100px;
 }
-
+figure {
+    padding: 5px;
+    max-height: 200px;
+    margin: auto;
+    border: thin black solid;
+}
 figcaption {
     font-size: 1em;
     color: var(--accent1-color);
