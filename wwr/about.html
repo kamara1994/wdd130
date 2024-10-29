@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="White Water Rafting Site About Us Page">
     <meta name="author" content="Joseph Allan Kamara">
-    <title>About Us - White Water Rafting</title>
+    <title>About Us - White Water Rafting Adventures</title>
     
     <!-- Preconnect to Google Fonts for better performance -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,12 +16,173 @@
     
     <!-- External CSS Link -->
     <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        /* Inline Styles for Enhanced Customization */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: linear-gradient(90deg, #2D0BDA, #4C47F7);
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        header .logo {
+            height: 80px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFD700;
+            text-shadow: 0 0 5px rgba(255, 215, 0, 0.7);
+        }
+        main {
+            padding: 50px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .hero {
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+        .hero img {
+            width: 100%;
+            height: 500px;
+            object-fit: cover;
+            border-radius: 10px;
+            filter: brightness(70%);
+        }
+        .hero h1 {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            color: white;
+            background: rgba(0, 0, 0, 0.7);
+            padding: 20px;
+            border-radius: 10px;
+            font-size: 3em;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+        }
+        .center-image {
+            margin: 40px auto;
+            text-align: center;
+        }
+        .center-image img {
+            width: 80%;
+            height: 300px;
+            object-fit: cover;
+            border-radius: 10px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease-in-out;
+        }
+        .center-image img:hover {
+            transform: scale(1.05);
+        }
+        .history {
+            background-color: #FFE66D;
+            padding: 50px;
+            border-radius: 20px;
+            box-shadow: 0 0 25px rgba(0, 0, 0, 0.15);
+            margin-top: 50px;
+        }
+        .history-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 30px;
+        }
+        .history-content img {
+            width: 80%;
+            height: 350px;
+            object-fit: cover;
+            border-radius: 20px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.5s ease;
+        }
+        .history-content img:hover {
+            transform: scale(1.05);
+        }
+        .adventure {
+            text-align: center;
+            margin-top: 50px;
+        }
+        .adventure-gallery {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 30px;
+            margin-top: 30px;
+        }
+        .adventure-gallery figure {
+            text-align: center;
+        }
+        .adventure-gallery img {
+            width: 100%;
+            height: 250px;
+            object-fit: cover;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.7s ease-in-out;
+        }
+        .adventure-gallery img:hover {
+            transform: scale(1.15) rotate(3deg);
+        }
+        footer {
+            background-color: #2D0BDA;
+            color: white;
+            padding: 30px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            box-shadow: 0 -4px 8px rgba(0, 0, 0, 0.1);
+        }
+        footer .social-media {
+            display: flex;
+            gap: 20px;
+        }
+        footer a img {
+            width: 30px;
+            transition: transform 0.3s;
+        }
+        footer a img:hover {
+            transform: scale(1.2);
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin-top: 15px;
+            }
+            footer {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+        }
+    </style>
 </head>
 <body>
 
     <!-- Header -->
     <header>
-        <img src="images/rafting-logo.avif" alt="Rafting Adventure" class="logo">
+        <img src="images/rafting_logo.avif" alt="Rafting Adventure" class="logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -36,23 +197,23 @@
         <div class="hero">
             <img src="images/herowideimage.jpg" alt="white water rafting image">
             <h1>White Water Rafting</h1>
-            <article class="center-image">
-                <p>
-                    Our mission is to provide an exhilarating and safe rafting experience for all adventurers. 
-                    We believe in pushing boundaries, conquering nature's most exciting challenges, 
-                    and ensuring that every moment is unforgettable. Join us on this thrilling journey 
-                    and create memories that will last a lifetime!
-                </p>
-                <img src="images/happyclint.jpg" alt="happy client" class="center-image"> <!-- Fixed the img tag -->
-            </article>
         </div>
+        <article class="center-image">
+            <p>
+                Our mission is to provide an exhilarating and safe rafting experience for all adventurers. 
+                We believe in pushing boundaries, conquering nature's most exciting challenges, 
+                and ensuring that every moment is unforgettable. Join us on this thrilling journey 
+                and create memories that will last a lifetime!
+            </p>
+            <img src="images/happyclint.jpg" alt="happy client">
+        </article>
 
         <!-- History Section -->
         <section class="history">
             <h2>History</h2>
             <div class="history-content">
                 <p>Welcome to our rafting adventures! We offer thrilling, unforgettable experiences for adventure seekers of all levels. Whether you're a first-timer or a seasoned rafter, we guarantee you'll be swept away by the excitement of conquering the rapids. Join us on an adventure where every twist and turn brings a new challenge, and every splash leaves you wanting more!</p>
-                <img src="images/rafting12_1024.jpg" alt="History Image"> <!-- Removed extra space in img path -->
+                <img src="images/rafting12_1024 .jpg" alt="History Image">
                 <p>Our team is dedicated to providing exceptional rafting experiences, ensuring both adventure and safety on every trip. With years of expertise, we guarantee a memorable journey through nature's most thrilling waterways.</p>
             </div>
         </section>
@@ -87,7 +248,7 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 White Water Rafting | I Joseph Allan Kamara Designed This Site</p>
+        <p>&copy; 2024 White Water Rafting | Joseph Allan Kamara Designed This Site</p>
         <div class="social-media">
             <a href="https://facebook.com" target="_blank"><img src="images/Facebook-Logo.jpg" alt="Facebook"></a>
             <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>

@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore our exciting white water rafting trips, learn more about each adventure, and book the perfect experience for you.">
+    <meta name="author" content="Joseph Allan Kamara">
+    <title>White Water Rafting Adventures - Trips</title>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/rafting.css">
+    <style>
+        /* Inline Styles for Enhanced Customization */
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f8ff;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #2D0BDA;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        header .logo {
+            height: 80px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-weight: bold;
+            transition: color 0.3s;
+        }
+        nav a:hover {
+            color: #FFD700;
+        }
+        .hero {
+            background: url('images/herowideimage.jpg') no-repeat center center/cover;
+            height: 60vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            text-shadow: 2px 2px 8px #000;
+        }
+        .hero h1 {
+            font-size: 3em;
+        }
+        .trips {
+            padding: 50px;
+            background-color: #ffffff;
+            text-align: center;
+        }
+        .trip {
+            margin: 30px auto;
+            max-width: 800px;
+            background-color: #f9f9f9;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        .trip img {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+        }
+        .cta {
+            padding: 20px;
+            text-align: center;
+            background-color: #FFD700;
+            margin: 30px 0;
+        }
+        .cta a {
+            background-color: #2D0BDA;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta a:hover {
+            background-color: #1e08a6;
+        }
+        .trips-table {
+            margin: 50px auto;
+            max-width: 90%;
+            overflow-x: auto;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+        th, td {
+            padding: 15px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
+        th {
+            background-color: #2D0BDA;
+            color: white;
+        }
+        .history {
+            padding: 50px;
+            background-color: #f4f4f4;
+            text-align: center;
+        }
+        .history img {
+            width: 100%;
+            max-width: 600px;
+            height: auto;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+        footer {
+            background-color: #2D0BDA;
+            color: white;
+            padding: 20px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        footer .social-media {
+            display: flex;
+            gap: 15px;
+        }
+        footer a img {
+            width: 30px;
+        }
+        @media (max-width: 768px) {
+            header {
+                flex-direction: column;
+            }
+            nav {
+                margin-top: 15px;
+            }
+            .trip {
+                max-width: 90%;
+            }
+            footer {
+                flex-direction: column;
+                text-align: center;
+                gap: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Header -->
+    <header>
+        <img src="images/rafting_logo.avif" alt="Rafting Adventure Logo" class="logo">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="about.html">About Us</a>
+            <a href="trips.html">Trips</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <div class="hero">
+        <h1>Adventures Await</h1>
+    </div>
+
+    <!-- Trips Section -->
+    <main>
+        <section class="trips">
+            <h1>Our White Water Rafting Trips</h1>
+
+            <!-- Trip Details -->
+            <div class="trip">
+                <img src="images/rafting1.jpg" alt="Rapid River Rush">
+                <h2>Rapid River Rush</h2>
+                <p>Experience the thrill of Rapid River Rush, a 3-hour adventure through exciting rapids. Perfect for thrill-seekers looking for a true white water challenge.</p>
+            </div>
+
+            <div class="trip">
+                <img src="images/rafting2.jpg" alt="Family Fun Float">
+                <h2>Family Fun Float</h2>
+                <p>A relaxing 2-hour float suitable for all ages. Enjoy beautiful scenery and calm waters, making this the perfect family-friendly rafting experience.</p>
+            </div>
+
+            <div class="trip">
+                <img src="images/rafting3.jpg" alt="Sunset Serenity Ride">
+                <h2>Sunset Serenity Ride</h2>
+                <p>Float along the river as the sun sets, giving you breathtaking views and a peaceful experience. Ideal for couples and those looking for a serene escape.</p>
+            </div>
+        </section>
+
+        <!-- Call to Action Button -->
+        <section class="cta">
+            <a href="contact.html" class="btn">Book Your Adventure Today!</a>
+        </section>
+
+        <!-- Trips Summary Table -->
+        <section class="trips-table">
+            <h2>Trips Overview</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Trip Name</th>
+                        <th>Duration</th>
+                        <th>Cost</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Rapid River Rush</td>
+                        <td>3 hours</td>
+                        <td>$120</td>
+                    </tr>
+                    <tr>
+                        <td>Family Fun Float</td>
+                        <td>2 hours</td>
+                        <td>$80</td>
+                    </tr>
+                    <tr>
+                        <td>Sunset Serenity Ride</td>
+                        <td>2.5 hours</td>
+                        <td>$100</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- History Section -->
+        <section class="history">
+            <h2>Our Story</h2>
+            <p>White Water Rafting Adventures was founded with a passion for adventure and a love for the outdoors. Our mission is to provide thrilling, unforgettable experiences while prioritizing safety and environmental responsibility. Our experienced guides are dedicated to making each trip memorable for everyone involved, whether you are an experienced rafter or just starting out.</p>
+            <img src="images/rafting12_1024.jpg" alt="Rafting History">
+            <p>Join us as we explore nature's most beautiful rivers and create memories that will last a lifetime. Every rapid, every twist and turn, every splash is an adventure waiting for you!</p>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 White Water Rafting | Joseph Allan Kamara Designed This Site</p>
+        <a href="images/contact-us-wireframe.jpg" target="_blank">View Wireframe</a>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="images/Facebook-Logo.jpg" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.jpeg" alt="Instagram"></a>
+        </div>
+    </footer>
+
+</body>
+</html>
