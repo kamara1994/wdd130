@@ -31,28 +31,35 @@
         <h1>Contact Us - White Water Rafting Adventures</h1>
 
         <!-- Embedded Google Map -->
-        <iframe src="https://www.google.com/maps/embed?pb=..." width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0194095591975!2d-122.41941538468184!3d37.77492977975908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b61e43d%3A0x5c36cddc0f1a4f33!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1691456798001!5m2!1sen!2s" width="600" height="450" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <!-- Company Information -->
+        <address>
+            <p>123 Rafting Ave, Rapids City, RC 12345</p>
+            <p>Phone: (123) 456-7890</p>
+            <p>Email: info@raftingadventures.com</p>
+        </address>
 
         <!-- Contact Form -->
         <form action="/submit-contact" method="post">
             <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
+            <input type="text" id="name" name="name" required value="  ">
 
             <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
+            <input type="email" id="email" name="email" required value=" ">
+
+            <fieldset>
+                <legend>Purpose of Message:</legend>
+                <label for="generalInquiry">General Inquiry</label>
+                <input type="radio" id="generalInquiry" name="purpose" value="general-inquiry" required>
+                <label for="reservationQuestion">Reservation Question</label>
+                <input type="radio" id="reservationQuestion" name="purpose" value="reservation-question">
+                <label for="websiteSuggestion">Website Suggestion</label>
+                <input type="radio" id="websiteSuggestion" name="purpose" value="website-suggestion">
+            </fieldset>
 
             <label for="comments">Comments:</label>
             <textarea id="comments" name="comments" required></textarea>
-
-            <fieldset>
-                <legend>Preferred Contact Method:</legend>
-                <label for="emailContact">Email</label>
-                <input type="radio" id="emailContact" name="contactMethod" value="email" required>
-                <label for="phoneContact">Phone</label>
-                <input type="radio" id="phoneContact" name="contactMethod" value="phone">
-                <label for="noneContact">None</label>
-                <input type="radio" id="noneContact" name="contactMethod" value="none">
-            </fieldset>
 
             <label for="newsletter">Sign up for our newsletter:</label>
             <input type="checkbox" id="newsletter" name="newsletter">
@@ -60,7 +67,23 @@
             <button type="submit">Send Your Message</button>
         </form>
 
-        <!-- Grid of images -->
+        <!-- Employee Section -->
+        <div class="employee-section">
+            <figure>
+                <img src="images/BBAA7CE5-2C57-4306-B191-EAF298FE281D.jpeg" alt="John Doe - Tour Guide">
+                <figcaption>John Doe, Tour Guide</figcaption>
+            </figure>
+            <figure>
+                <img src="images/78B22F7A-5F43-4657-AC4C-CA7E6C5AB2B8.jpeg" alt="Jane Smith - Reservations Manager">
+                <figcaption>Jane Smith, Reservations Manager</figcaption>
+            </figure>
+            <figure>
+                <img src="images/51BD246A-7BEA-42CE-A6E3-E50BE7C22D4E_1_105_c.jpeg" alt="Alice Johnson - Safety Officer">
+                <figcaption>Alice Johnson, Safety Officer</figcaption>
+            </figure>
+        </div>
+
+        <!-- Grid of Adventure Images -->
         <div class="image-grid">
             <img src="images/rafting53_600.jpg" alt="Rafting Adventure Image 1" class="rafting-img">
             <img src="images/rafting12_1024 .jpg" alt="Rafting Adventure Image 2" class="rafting-img">
@@ -75,7 +98,8 @@
 
     <!-- Footer -->
     <footer>
-        <p>&copy; 2024 White Water Rafting | I Joseph Allan Kamara Designed This Site</p>
+        <p>&copy; 2024 White Water Rafting | Joseph Allan Kamara Designed This Site</p>
+        <a href="images/contact-us-wireframe.jpg" target="_blank">View Wireframe</a>
         <div class="social-media">
             <a href="https://facebook.com" target="_blank"><img src="images/Facebook-Logo.jpg" alt="Facebook"></a>
             <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>
