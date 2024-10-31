@@ -89,31 +89,49 @@ section img {
 }
 
 /* Footer Styles */
-footer {
-    background-color: var(--accent1-color);
-    color: white;
-    text-align: center;
-    padding: 10px 0;
-}
-
-footer p {
-    margin: 5px 0;
-}
-
-footer a {
-    margin: 0 10px;
-}
-
-footer a img {
-    width: 30px;
+/* Style the social media links inside the footer */
+footer .social-media a {
     text-decoration: none;
+    display: inline-block;
+    margin: 10px; /* Space between each icon */
+    transition: transform 0.3s ease-in-out; /* Smooth transition for zoom effect */
 }
 
-footer a:hover {
-    text-decoration: none;
+/* Style the images inside the social media links */
+footer .social-media a img {
+    width: 50px; /* Adjust icon size as needed */
+    height: 50px;
+    border: 5px solid #ffc0cb; /* Soft pink border */
+    border-radius: 50%; /* Circular frame for fun look */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Adds subtle shadow */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effects */
 }
 
-/* Remove underlines from social media links */
-footer a {
-    text-decoration: none;
+/* Hover effect for the social media icons */
+footer .social-media a:hover img {
+    transform: scale(1.1); /* Slight zoom for fun effect */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3); /* Deepens shadow on hover */
+    border-color: #ff69b4; /* Change border to a more vibrant pink on hover */
+    footer {
+        text-align: center;
+        padding: 20px;
+        background-color: blue;
+        margin-top: 20px;
+      }
+  
+      .social-media a {
+        margin: 0 10px;
+        display: inline-block;
+        transition: transform 10s;
+      }
+  
+      .social-media a:hover {
+        transform: scale(1.1);
+      }
+  
+      .social-media img {
+        width: 50px;
+        height: 50px;
+        border-radius: 30%;
+      }
 }
