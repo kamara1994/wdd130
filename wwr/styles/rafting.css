@@ -173,7 +173,7 @@ form textarea {
     padding: 10px;
     margin-bottom: 20px;
     border: 1px solid #ccc;
-    border-radius: 5px;
+    border-radius: 2px;
 }
 
 form fieldset {
@@ -263,7 +263,10 @@ footer a img {
     width: 30px;
     height: auto;
 }
-
+footer a {
+    text-decoration: none;
+    color: white;
+}
 /* Accessibility and Color Contrast Improvements */
 button,
 a {
