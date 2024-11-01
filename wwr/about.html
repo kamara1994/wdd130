@@ -1,132 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover the history and excitement of White Water Rafting Adventures.">
-    <meta name="author" content="Joseph Allan Kamara">
-    <title>About Us - White Water Rafting Adventures</title>
-    
-    <!-- Preconnect to Google Fonts for better performance -->
+    <meta name="description" content="Explore thrilling rafting adventures with us! Join us for the ride of a lifetime.">
+    <title>Rafting Adventures - About Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
+    <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    
-    <!-- Google Fonts Link -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    
-    <!-- External CSS Link -->
-    <link rel="stylesheet" href="styles/rafting.css">
-    
-    <style>
-        body {
-            background: linear-gradient(to bottom, #f0f8ff, #cce0ff);
-            font-family: 'Roboto', sans-serif;
-        }
-        .hero {
-            position: relative;
-            text-align: center;
-            color: white;
-        }
-        .hero img {
-            width: 100%;
-            height: auto;
-            filter: brightness(0.6);
-        }
-        .hero h1 {
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            transform: translate(-50%, -50%);
-            font-size: 3em;
-            text-shadow: 2px 2px 10px rgba(0, 0, 0, 0.7);
-        }
-        .center-image p {
-            font-size: 1.2em;
-            margin: 20px auto;
-            max-width: 800px;
-            text-align: center;
-            line-height: 1.6;
-        }
-        .center-image img {
-            display: block;
-            margin: 20px auto;
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-            transition: transform 0.3s ease-in-out;
-        }
-        .center-image img:hover {
-            transform: scale(1.05);
-        }
-        .history {
-            background: #e6f7ff;
-            padding: 40px;
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-            margin: 40px 0;
-        }
-        .history-content {
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            gap: 20px;
-        }
-        .history-content img {
-            width: 80%;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        .adventure {
-            text-align: center;
-            padding: 40px;
-            background: linear-gradient(to bottom, #cce0ff, #f0f8ff);
-            border-radius: 10px;
-            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
-        }
-        .adventure-gallery {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 20px;
-            margin-top: 20px;
-        }
-        .adventure-gallery figure {
-            transition: transform 0.3s ease-in-out;
-        }
-        .adventure-gallery figure:hover {
-            transform: scale(1.05);
-        }
-        .adventure-gallery img {
-            width: 100%;
-            height: auto;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
-        }
-        footer {
-            background: #2D0BDA;
-            color: white;
-            text-align: center;
-            padding: 20px;
-            border-top-left-radius: 10px;
-            border-top-right-radius: 10px;
-            box-shadow: 0 -5px 15px rgba(0, 0, 0, 0.2);
-        }
-        footer .social-media {
-            margin-top: 10px;
-        }
-        footer .social-media a {
-            margin: 0 10px;
-            transition: transform 0.3s;
-        }
-        footer .social-media a:hover {
-            transform: scale(1.2);
-        }
-    </style>
 </head>
-<body>
 
-    <!-- Header -->
+<body>
+    <!-- Header Section -->
     <header>
-        <img src="images/rafting_logo.avif" alt="Rafting Adventure" class="logo">
+        <img src="images/rafting-logo.avif" alt="Rafting Adventures Logo" class="site-logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -139,113 +29,43 @@
     <main>
         <!-- Hero Section -->
         <div class="hero">
-            <img src="images/herowideimage.jpg" alt="white water rafting image">
-            <h1>White Water Rafting</h1>
+            <img src="images/herowideimage.jpg" alt="Thrilling Rafting Adventure" class="hero-image">
+            <h1>Rafting Adventures</h1>
+            <article class="hero-article">
+                <img src="images/rafting12_1024 .jpg" alt="Happy Client" class="client-img">
+                <p>Our mission is to bring you the adventure of a lifetime with our thrilling rafting experiences. Join us in exploring the wild waters and making unforgettable memories!</p>
+            </article>
         </div>
-        <article class="center-image">
-            <p>
-                Our mission is to provide an exhilarating and safe rafting experience for all adventurers. 
-                We believe in pushing boundaries, conquering nature's most exciting challenges, 
-                and ensuring that every moment is unforgettable. Join us on this thrilling journey 
-                and create memories that will last a lifetime!
-            </p>
-            <img src="images/happyclint.jpg" alt="happy client">
-        </article>
 
         <!-- History Section -->
         <section class="history">
             <h2>History</h2>
-            <div class="history-content">
-                <p>Welcome to our rafting adventures! We offer thrilling, unforgettable experiences for adventure seekers of all levels. Whether you're a first-timer or a seasoned rafter, we guarantee you'll be swept away by the excitement of conquering the rapids. Join us on an adventure where every twist and turn brings a new challenge, and every splash leaves you wanting more!</p>
-                <img src="images/rafting12_1024 .jpg" alt="History Image">
-                <p>Our team is dedicated to providing exceptional rafting experiences, ensuring both adventure and safety on every trip. With years of expertise, we guarantee a memorable journey through nature's most thrilling waterways.</p>
-            </div>
+            <p>Rafting Adventures was founded out of a passion for thrill and exploration. Since our inception, we've taken thousands of adventurers on unforgettable journeys down some of the world's most exciting rivers. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin eget ex id sapien dictum vestibulum.</p>
         </section>
 
-        <!-- Adventure Section -->
-        <section class="adventure">
+        <!-- Adventure Awaits Section -->
+        <section class="adventure-awaits">
             <h2>Adventure Awaits You!</h2>
             <div class="adventure-gallery">
-                <figure>
-                    <img src="images/rafting31_600.jpg" alt="Peaceful Rapids">
-                    <figcaption>Peaceful Rapids</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting37_1024.jpg" alt="Colorado River">
-                    <figcaption>Colorado River</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting47_600.png" alt="Bear River">
-                    <figcaption>Bear River</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting53_600.jpg" alt="Smokey River">
-                    <figcaption>Smokey River</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/rafting64_600.jpg" alt="Boise River">
-                    <figcaption>Boise River</figcaption>
-                </figure>
+                <img src="images/rafting31_600.jpg" alt="White Water Rafting Adventure 1">
+                <img src="images/rafting37_1024 pg.jpg" alt="White Water Rafting Adventure 2">
+                <img src="images/rafting53_600.jpg" alt="White Water Rafting Adventure 3">
+                <img src="images/rafting64_600.jpg" alt="White Water Rafting Adventure 4">
+                <img src="images/rafting47_600.png" alt="White Water Rafting Adventure 5">
             </div>
         </section>
     </main>
 
-    <!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="styles/custom-style.css">
-  <style>
-    footer {
-      background-color: #2D0BDA;
-      color: white;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 20px;
-      flex-wrap: wrap;
-    }
-
-    footer p {
-      margin: 0;
-    }
-
-    .social-media {
-      display: flex;
-      gap: 10px;
-    }
-
-    .social-media a {
-      margin: 0 10px;
-      display: inline-block;
-      transition: transform 0.3s;
-    }
-
-    .social-media a:hover {
-      transform: scale(1.1);
-    }
-
-    .social-media img {
-      width: 50px;
-      height: 50px;
-      border-radius: 30%;
-    }
-  </style>
-</head>
-<body>
-  <footer>
-    <p>&copy; 2024 White Water Rafting | Joseph Allan Kamara Designed This Site</p>
-    <a href="images/contact-us-wireframe.jpg" target="_blank">View Wireframe</a>
-    <div class="social-media">
-      <a href="https://facebook.com" target="_blank"><img src="images/Facebook-Logo.jpg" alt="Facebook"></a>
-      <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>
-      <a href="https://instagram.com" target="_blank"><img src="images/instagram.jpeg" alt="Instagram"></a>
-    </div>
-  </footer>
+    <!-- Footer Section -->
+    <footer>
+        <p>&copy; 2024 White Water Rafting | Joseph Allan Kamara Designed This Site</p>
+        <a href="images/contact-us-wireframe.jpg" target="_blank">View Wireframe</a>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="images/Facebook-Logo.jpg" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.jpeg" alt="Instagram"></a>
+        </div>
+    </footer>
 </body>
-</html>
 
-
-</body>
 </html>

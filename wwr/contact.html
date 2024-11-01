@@ -1,23 +1,22 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Contact White Water Rafting Adventures for any inquiries, reservations, or suggestions.">
-    <meta name="author" content="Joseph Allan Kamara">
-    <title>Contact Us - White Water Rafting Adventures</title>
-
+    <meta name="description" content="Contact Rafting Adventures for questions, reservations, or suggestions.">
+    <title>Rafting Adventures - Contact Us</title>
+    <link rel="stylesheet" href="styles/rafting.css">
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/rafting.css">
 </head>
-<body>
 
-    <!-- Header -->
+<body>
+    <!-- Header Section -->
     <header>
-        <img src="images/rafting-logo.avif" alt="Rafting Adventure Logo" class="logo">
+        <img src="images/rafting-logo.avif" alt="Rafting Adventures Logo" class="site-logo">
         <nav>
             <a href="index.html">Home</a>
             <a href="about.html">About Us</a>
@@ -28,95 +27,86 @@
 
     <!-- Main Content -->
     <main>
-        <h1>Contact Us - White Water Rafting Adventures</h1>
+        <h1>Contact Us</h1>
 
-        <!-- Embedded Google Map -->
-        <div class="map-container">
-            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3153.0194095591975!2d-122.41941538468184!3d37.77492977975908!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8085809c5b61e43d%3A0x5c36cddc0f1a4f33!2sSan%20Francisco%2C%20CA%2C%20USA!5e0!3m2!1sen!2s!4v1691456798001!5m2!1sen!2s" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-        </div>
-        <!-- Company Information -->
-        <address>
-            <p>123 Rafting Ave, Rapids City, RC 12345</p>
-            <p>Phone: <a href="tel:+11234567890">(123) 456-7890</a></p>
+        <!-- Company Information Section -->
+        <section class="company-info">
+            <h2>Our Contact Information</h2>
+            <p>Address: 123 Adventure Lane, River City, RC 12345</p>
+            <p>Phone: (123) 456-7890</p>
             <p>Email: <a href="mailto:info@raftingadventures.com">info@raftingadventures.com</a></p>
-        </address>
+            <!-- Google Map Embed -->
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.835434509897!2d144.9630578153152!3d-37.81627997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5773e8da0a59f4!2s123%20Adventure%20Lane%2C%20River%20City!5e0!3m2!1sen!2sus!4v1616148434295!5m2!1sen!2sus" 
+                width="600" 
+                height="450" 
+                allowfullscreen="" 
+                loading="lazy">
+            </iframe>
+        </section>
 
-        <!-- Contact Form -->
-        <form action="/submit-contact" method="post">
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name" required>
-
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required>
-
-            <fieldset>
-                <legend>Purpose of Message:</legend>
-                <label>
-                    <input type="radio" id="general-inquiry" name="purpose" value="general-inquiry" required>
-                    General Inquiry
-                </label>
-                <label>
-                    <input type="radio" id="reservation-question" name="purpose" value="reservation-question">
-                    Reservation Question
-                </label>
-                <label>
-                    <input type="radio" id="website-suggestion" name="purpose" value="website-suggestion">
-                    Website Suggestion
-                </label>
-            </fieldset>
-
-            <label for="comments">Comments:</label>
-            <textarea id="comments" name="comments" required></textarea>
-
-            <label>
-                <input type="checkbox" id="newsletter" name="newsletter">
-                Sign up for our newsletter
-            </label>
-
-            <button type="submit">Send Your Message</button>
-        </form>
-
-            <h1>Meet Our Team</h1>
-        
-            <!-- Employee Section -->
-            <div class="employee-section">
-                <figure>
-                    <img src="images/BBAA7CE5-2C57-4306-B191-EAF298FE281D.jpeg" alt="John Doe - Tour Guide">
-                    <figcaption>John Doe, Tour Guide</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/78B22F7A-5F43-4657-AC4C-CA7E6C5AB2B8.jpeg" alt="Jane Smith - Reservations Manager">
-                    <figcaption>Jane Smith, Reservations Manager</figcaption>
-                </figure>
-                <figure>
-                    <img src="images/51BD246A-7BEA-42CE-A6E3-E50BE7C22D4E_1_105_c.jpeg" alt="Alice Johnson - Safety Officer">
-                    <figcaption>Alice Johnson, Safety Officer</figcaption>
-                </figure>
+        <!-- Employee Profiles Section -->
+        <section class="employee-profiles">
+            <h2>Meet Our Team</h2>
+            <div class="employee">
+                <img src="images/allan.jpeg" alt="John Doe - Tour Guide">
+                <figcaption>John Doe - Tour Guide</figcaption>
             </div>
-        
-            <h1>Adventure Image Gallery</h1>
-        
-            <!-- Grid of Adventure Images -->
-            <div class="image-grid">
-                <img src="images/rafting53_600.jpg" alt="Rafting Adventure Image 1" class="rafting-img">
-                <img src="images/raftinG" alt="Rafting Adventure Image 2" class="rafting-img">
-                <img src="images/rafting31_600.jpg" alt="Rafting Adventure Image 3" class="rafting-img">
-                <img src="images/rafting53_600.jpg" alt="Rafting Adventure Image 4" class="rafting-img">
-                <img src="images/rafting37_1024.jpg" alt="Rafting Adventure Image 5" class="rafting-img">
-                <img src="images/rafting47_600.png" alt="Rafting Adventure Image 6" class="rafting-img">
-                <img src="images/happyclint.jpg" alt="Kayak Adventure Image 7" class="rafting-img">
+            <div class="employee">
+                <img src="images/mary.jpeg" alt="Jane Smith - Safety Officer">
+                <figcaption>Jane Smith - Safety Officer</figcaption>
             </div>
+            <div class="employee">
+                <img src="images/habiba.jpeg" alt="Alex Johnson - Customer Service">
+                <figcaption>Alex Johnson - Customer Service</figcaption>
+            </div>
+        </section>
 
-        
+        <!-- Contact Form Section -->
+        <section class="contact-form">
+            <h2>Send Us a Message</h2>
+            <form action="#" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+
+                <p>Purpose of Your Message:</p>
+                <label>
+                    <input type="radio" name="purpose" value="general" required> General Inquiry
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="reservation"> Reservation Question
+                </label>
+                <label>
+                    <input type="radio" name="purpose" value="suggestion"> Website Suggestion
+                </label>
+
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" rows="5" required></textarea>
+
+                <label>
+                    <input type="checkbox" name="subscribe"> Please subscribe me to the monthly newsletter
+                </label>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
     </main>
-  <footer>
-    <p>&copy; 2024 White Water Rafting | Joseph Allan Kamara Designed This Site</p>
-    <a href="images/contact-us-wireframe.jpg" target="_blank">View Wireframe</a>
-    <div class="social-media">
-      <a href="https://facebook.com" target="_blank"><img src="images/Facebook-Logo.jpg" alt="Facebook"></a>
-      <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>
-      <a href="https://instagram.com" target="_blank"><img src="images/instagram.jpeg" alt="Instagram"></a>
-    </div>
-  </footer>
+
+    <!-- Footer Section -->
+    <footer>
+        <div class="left-content">
+            <p>&copy; 2024 Rafting Adventures | Joseph Allan Kamara Designed This Site</p>
+            <a href="images/contact-us-wireframe.jpg" target="_blank">View Wireframe</a>
+        </div>
+        <div class="social-media">
+            <a href="https://facebook.com" target="_blank"><img src="images/Facebook-Logo.jpg" alt="Facebook"></a>
+            <a href="https://twitter.com" target="_blank"><img src="images/twitter.webp" alt="Twitter"></a>
+            <a href="https://instagram.com" target="_blank"><img src="images/instagram.jpeg" alt="Instagram"></a>
+        </div>
+    </footer>
+</body>
 
 </html>

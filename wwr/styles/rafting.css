@@ -1,206 +1,413 @@
-/* General Styles */
-body {
-    font-family: 'Roboto', sans-serif;
+/* CSS Variables for Color Scheme */
+:root {
+    --primary-color: #2a9d8f;
+    --secondary-color: #e76f51;
+    --text-color: #dce3e7;
+    --background-color: #c3ccd5;
+    --accent-color: #2a9d8f;
+    --header-footer-color: #0000ff; /* Blue color for header and footer */
+    --text-white: #ffffff; /* White color for text */
+    --text-green: #008000; /* Green color for "History" */
+    --text-black: #000000; /* Black color for "Rafting Adventures" */
+}
+
+/* General Page Styles */
+html, body {
+    width: 100%;
+    height: 100%;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
-    color: #333;
+    font-family: 'Arial', sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-color);
+    font-size: 18px;
+    line-height: 1.6;
 }
 
-/* Header Styles */
+/* Header and Navigation */
 header {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    padding: 20px;
-    background-color: #2D0BDA;
+    justify-content: space-between;
+    padding: 1rem 0;
+    background-color: var(--header-footer-color);
+    width: 100%;
 }
 
-header .logo {
-    height: 80px;
-}
-
-nav {
-    display: flex;
-    gap: 20px;
+header .site-logo {
+    width: 100px;
 }
 
 nav a {
-    color: #000;
     text-decoration: none;
-    font-size: 1.1em;
-    background-color: #FFE66D;
-    padding: 10px;
+    color: black;
+    background-color: yellow;
+    margin-left: 1rem;
+    padding: 0.75rem 1.5rem;
     border-radius: 5px;
+    display: inline-block;
+    font-size: 1rem;
+    font-weight: bold;
 }
 
 nav a:hover {
-    background-color: #DCB5E2;
-    color: #2D0BDA;
-}
-
-/* Main Content */
-main {
-    padding: 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-}
-
-/* Employee Section */
-.employee-section {
-    display: flex;
-    gap: 20px;
-    justify-content: center;
-    flex-wrap: wrap;
-    margin: 40px 0;
-}
-
-.employee-section figure {
-    border: 5px solid #4B0082;
-    padding: 15px;
-    background-color: #FFF8DC;
-    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-    text-align: center;
-    max-width: 200px;
-}
-
-.employee-section img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.employee-section figcaption {
-    margin-top: 10px;
-    font-weight: bold;
-    color: #4B0082;
-}
-
-/* Adventure Image Section */
-.image-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: center;
-    margin: 40px 0;
-}
-
-.rafting-img {
-    width: 200px;
-    height: auto;
-    border: 8px solid #8B4513;
-    padding: 10px;
-    background-color: #F5F5DC;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    border-radius: 5px;
-}
-
-/* Contact Form */
-form {
-    background-color: white;
-    padding: 20px;
-    border-radius: 5px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-    max-width: 600px;
-    margin: 20px auto;
-}
-
-form label {
-    display: block;
-    margin-bottom: 10px;
-    font-weight: bold;
-}
-
-form input[type="text"],
-form input[type="email"],
-form textarea {
-    width: 100%;
-    padding: 10px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 2px;
-}
-
-form button[type="submit"] {
-    background-color: #2D0BDA;
+    background-color: var(--secondary-color);
     color: white;
-    padding: 10px 20px;
+}
+
+/* Hero Section */
+.hero {
+    position: relative;
+    text-align: center;
+    width: 100%;
+}
+
+.hero-image {
+    width: 100%;
+    display: block;
+}
+
+.hero h1 {
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    color: var(--text-black);
+    font-size: 3rem;
+    font-family: 'Georgia', serif;
+}
+
+/* Hero Article (About Us Page) */
+.hero-article {
+    position: absolute;
+    bottom: 10%;
+    left: 10%;
+    background-color: rgba(255, 255, 255, 0.8);
+    padding: 1.5rem;
+    max-width: 300px;
+    border-radius: 10px;
+    font-size: 1.1rem;
+    font-family: 'Verdana', sans-serif;
+}
+
+.hero-article img.client-img {
+    float: right;
+    width: 50px;
+    margin-left: 1rem;
+}
+
+/* History Section (About Us Page) */
+.history {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.history h2 {
+    color: var(--text-green);
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+/* Adventure Awaits Section (About Us Page) */
+.adventure-awaits {
+    margin-top: 2rem;
+    font-size: 1.2rem;
+}
+
+.adventure-gallery {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+.adventure-gallery img {
+    width: calc(20% - 1rem);
+}
+
+/* Frame Styling for Last Five Images (About Us Page) */
+.adventure-gallery img:last-child,
+.adventure-gallery img:nth-last-child(2),
+.adventure-gallery img:nth-last-child(3),
+.adventure-gallery img:nth-last-child(4),
+.adventure-gallery img:nth-last-child(5) {
+    width: 400px;
+    height: 200px;
+    border: 3px solid #e76f51;
+    border-radius: 5px;
+    padding: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
+    object-fit: cover;
+}
+
+/* Company Info Section (Contact Page) */
+.company-info {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.company-info h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+}
+
+.company-info p {
+    margin: 0.5rem 0;
+}
+
+/* Employee Profiles Section (Contact Page) */
+.employee-profiles {
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+    margin-bottom: 2rem;
+}
+
+.employee {
+    text-align: center;
+}
+
+.employee img {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.employee figcaption {
+    margin-top: 0.5rem;
+    font-weight: bold;
+}
+
+/* Contact Form (Contact Page) */
+.contact-form {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+    background-color: #ffffff;
+    padding: 1.5rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.contact-form h2 {
+    font-size: 2rem;
+    color: var(--primary-color);
+    text-align: center;
+}
+
+.contact-form label {
+    display: block;
+    margin-top: 1rem;
+}
+
+.contact-form input,
+.contact-form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.contact-form input[type="checkbox"] {
+    width: auto;
+    margin-top: 0.5rem;
+}
+
+.contact-form button {
+    display: block;
+    width: 100%;
+    padding: 0.75rem;
+    background-color: var(--primary-color);
+    color: white;
     border: none;
     border-radius: 5px;
+    font-size: 1rem;
     cursor: pointer;
+    margin-top: 1.5rem;
 }
 
-form button[type="submit"]:hover {
-    background-color: #1e08a6;
+.contact-form button:hover {
+    background-color: var(--secondary-color);
 }
 
-/* Footer */
-footer {
-    background-color: #2D0BDA;
+/* Purpose and Offerings Section (Home Page) */
+.purpose-offerings {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.grid-item {
+    background-color: #ffffff;
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.grid-item img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.grid-item h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.grid-item p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Call to Action Section (Home & Trips Pages) */
+.call-to-action {
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.call-to-action .cta-button {
+    display: inline-block;
+    background-color: var(--primary-color);
     color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-top: 1rem;
+}
+
+.call-to-action .cta-button:hover {
+    background-color: var(--secondary-color);
+}
+
+/* Trips Descriptions (Trips Page) */
+.trips-descriptions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.trip {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    max-width: 300px;
+    text-align: center;
+}
+
+.trip img {
+    width: 100%;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+}
+
+.trip h3 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+}
+
+.trip p {
+    font-size: 1rem;
+    color: var(--text-color);
+}
+
+/* Trips Table (Trips Page) */
+.trips-table {
+    margin-top: 3rem;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 1rem;
+}
+
+th, td {
+    border: 1px solid #ccc;
+    padding: 0.75rem;
+    text-align: center;
+}
+
+th {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+td {
+    background-color: #ffffff;
+}
+
+/* Footer Styles */
+footer {
+    margin-top: 2rem;
+    padding-top: 1rem;
+    border-top: 1px solid var(--primary-color);
+    background-color: var(--header-footer-color);
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px;
+    font-size: 1rem;
+    color: white;
     flex-wrap: wrap;
 }
 
-footer p {
-    margin: 0;
+/* Center the Wireframe Link */
+footer .center-content {
+    flex: 1;
+    text-align: center;
+}
+
+footer .left-content {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    flex: 1;
 }
 
 footer .social-media {
     display: flex;
     gap: 10px;
+    flex: 1;
+    justify-content: flex-end;
 }
 
-footer a {
-    text-decoration: none;
-    color: white;
+footer .left-content a {
+    color: #ffffff;
+    font-weight: bold;
 }
 
-footer a img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: transform 0.3s;
+footer .left-content a:hover {
+    text-decoration: underline;
 }
 
-footer a img:hover {
-    transform: scale(1.2);
+footer .social-media a {
+    padding: 5px;
+    border-radius: 10px;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    overflow: hidden;
 }
 
-/* Responsive Design */
-@media (max-width: 768px) {
-    header {
-        flex-direction: column;
-        text-align: center;
-    }
-
-    nav {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .image-grid {
-        gap: 10px;
-    }
-
-    footer {
-        flex-direction: column;
-        text-align: center;
-        gap: 10px;
-    }
-}
-
-/* Accessibility and Color Contrast Improvements */
-a,
-button {
-    outline: none;
-    transition: background-color 0.3s, color 0.3s;
-}
-
-a:focus,
-button:focus {
-    outline: 2px solid #FFE66D;
+footer .social-media a img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
 }
