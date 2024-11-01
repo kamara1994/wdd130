@@ -8,7 +8,7 @@
     --header-footer-color: #0000ff; /* Blue color for header and footer */
     --text-white: #ffffff; /* White color for text */
     --text-green: #008000; /* Green color for "History" */
-    --text-black: #000000; /* Black color for "Rafting Adventures" */
+    --text-black: #5909b3; /* Black color for "Rafting Adventures" */
 }
 
 /* General Page Styles */
@@ -369,41 +369,47 @@ footer {
 }
 
 /* Center the Wireframe Link */
-footer .center-content {
+footer .center-content,
+footer .left-content {
     flex: 1;
-    text-align: center;
+    text-align: center; /* Center the content horizontally */
 }
 
 footer .left-content {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    flex: 1;
 }
 
+footer .center-content a,
+footer .left-content a {
+    color: var(--text-white); /* White color for all "View Wireframe" links */
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem; /* Add padding for a better appearance */
+    border: 2px solid white; /* White border to create a frame */
+    border-radius: 5px; /* Rounded corners for the frame */
+}
+
+footer .center-content a:hover,
+footer .left-content a:hover {
+    text-decoration: underline; /* Underline on hover for emphasis */
+}
+
+/* Social Media Icons */
 footer .social-media {
     display: flex;
     gap: 10px;
-    flex: 1;
     justify-content: flex-end;
-}
-
-footer .left-content a {
-    color: #ffffff;
-    font-weight: bold;
-}
-
-footer .left-content a:hover {
-    text-decoration: underline;
+    flex: 1;
 }
 
 footer .social-media a {
-    padding: 5px;
-    border-radius: 10px;
     display: inline-block;
     width: 30px;
     height: 30px;
     overflow: hidden;
+    border: none; /* Invisible frame */
 }
 
 footer .social-media a img {
