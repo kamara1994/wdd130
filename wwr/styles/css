@@ -1,9 +1,11 @@
+/* rafting.css */
+
 /* General Styles */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f4;
+    background: linear-gradient(to bottom, #f0f8ff, #cce0ff);
     color: #333;
 }
 
@@ -14,6 +16,7 @@ header {
     align-items: center;
     padding: 20px;
     background-color: #2D0BDA;
+    color: black;
 }
 
 header .logo {
@@ -26,17 +29,118 @@ nav {
 }
 
 nav a {
-    color: #000;
+    color: black;
     text-decoration: none;
     font-size: 1.1em;
     background-color: #FFE66D;
     padding: 10px;
     border-radius: 5px;
+    font-weight: bold;
+    transition: color 0.3s;
+    margin: 0 15px;
 }
 
 nav a:hover {
     background-color: #DCB5E2;
-    color: #2D0BDA;
+    color: #FFD700;
+}
+
+/* Hero Section */
+.hero {
+    background: url('images/herowideimage.jpg') no-repeat center center/cover;
+    height: 60vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-shadow: 2px 2px 8px #000;
+}
+
+.hero h1 {
+    font-size: 3em;
+}
+
+/* Trips Section */
+.trips {
+    padding: 50px;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.trip {
+    margin: 30px auto;
+    max-width: 800px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+.trip img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Call to Action Section */
+.cta {
+    padding: 20px;
+    text-align: center;
+    background-color: #FFD700;
+    margin: 30px 0;
+}
+
+.cta a {
+    background-color: #2D0BDA;
+    color: white;
+    padding: 15px 30px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+
+.cta a:hover {
+    background-color: #1e08a6;
+}
+
+/* Trips Table Section */
+.trips-table {
+    margin: 50px auto;
+    max-width: 90%;
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #2D0BDA;
+    color: white;
+}
+
+/* History Section */
+.history {
+    padding: 50px;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+.history img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+    border-radius: 10px;
+    margin: 20px 0;
 }
 
 /* Main Content */
@@ -151,23 +255,28 @@ footer p {
 
 footer .social-media {
     display: flex;
-    gap: 10px;
+    gap: 15px;
+}
+
+.social-media a {
+    margin: 0 10px;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-media a:hover {
+    transform: scale(1.1);
+}
+
+.social-media img {
+    width: 30px;
+    height: auto;
+    border-radius: 30%;
 }
 
 footer a {
     text-decoration: none;
     color: white;
-}
-
-footer a img {
-    width: 40px;
-    height: 40px;
-    border-radius: 50%;
-    transition: transform 0.3s;
-}
-
-footer a img:hover {
-    transform: scale(1.2);
 }
 
 /* Responsive Design */
@@ -180,6 +289,11 @@ footer a img:hover {
     nav {
         flex-direction: column;
         gap: 10px;
+        margin-top: 15px;
+    }
+
+    .trip {
+        max-width: 90%;
     }
 
     .image-grid {
@@ -189,7 +303,7 @@ footer a img:hover {
     footer {
         flex-direction: column;
         text-align: center;
-        gap: 10px;
+        gap: 20px;
     }
 }
 
